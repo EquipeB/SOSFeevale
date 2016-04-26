@@ -1,0 +1,35 @@
+<?php
+$url = $_SERVER['REQUEST_URI'];
+?>
+<header id="bgTopo" class="container">
+	<h1>Paula Reichert</h1>
+	<div id="topo" class="content">
+		<div class="navLogo">
+			<a href="<?php echo DIRETORIO_INICIAL; ?>" class="logo"><img src="<?php echo IMG; ?>paula-reichert.png" alt="Paula Reichert" title="Paula Reichert" /></a>
+		</div>
+		<a href="<?php echo DIRETORIO_INICIAL; ?>/f5admin" class="btAcessoRestrito btPadrao">ACESSO CLIENTE</a>
+	</div>
+</header>
+
+<div id="menu">
+	<nav>
+		<ul>
+			<li <?php if($_SERVER['REQUEST_URI'] == '/paula-reichert/') echo 'class="ativo"'; ?>><a href="<?php echo DIRETORIO_INICIAL; ?>"><span>Home</span></a></li>
+			<li class="borderRight"><span></span></li>
+			<li <?php if(preg_match('/perfil/i', $url)) echo 'class="ativo"'; ?>><a href="<?php echo DIRETORIO_INICIAL; ?>perfil/"><span>Perfil</span></a></li>
+			<li class="borderRight"><span></span></li>
+			<li <?php if(preg_match('/paula-reichert\/projetos/i', $url)) echo 'class="ativo"'; ?>><a href="<?php echo DIRETORIO_INICIAL; ?>projetos/"><span>Projetos</span></a></li>
+			<li class="borderRight"><span></span></li>
+			<li <?php if(preg_match('/paula-reichert\/mostras/i', $url)) echo 'class="ativo"'; ?>><a href="<?php echo DIRETORIO_INICIAL; ?>mostras/"><span>Mostras</span></a></li>
+			<li class="borderRight"><span></span></li>
+			<li <?php if(preg_match('/contato/i', $url)) echo 'class="ativo"'; ?>><a href="<?php echo DIRETORIO_INICIAL; ?>contato/"><span>Contato</span></a></li>
+			<li class="borderRight"><span></span></li>
+			<li <?php if(preg_match('/pr-arquitetura/i', $url)) echo 'class="ativo"'; ?>><a href="<?php echo DIRETORIO_INICIAL; ?>pr-arquitetura/"><span>PR Arquitetura</span></a></li>
+		</ul>
+	</nav>
+	
+	<div class="bts">
+		<a class="btMenu"><i></i><span>MENU</span></a>
+		<a href="" class="btAcessoRestrito"></a>
+	</div>
+</div>

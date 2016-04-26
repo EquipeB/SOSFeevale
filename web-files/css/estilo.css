@@ -1,0 +1,73 @@
+
+body{
+	font-family:Arial;
+	font-size:16px;
+	color:#000;
+	text-align:center;
+}
+
+img,
+object,
+embed,
+video,
+iframe,
+iframe[style]{
+	max-width:100%;
+	height:auto;
+}
+.container{
+    float: left;
+    width: 100%;
+}
+	.content{
+		position:relative;
+		width:92%;
+		height:auto;
+		display:inline-block;
+	}
+		.content.paddingPadrao{
+			padding:40px 0;
+		}
+		
+h1{font-size:1.6em;line-height:1.2em;}
+h2{font-size:1.5em;}
+h3{font-size:1.1em;}
+
+/************
+	SITE
+*************/
+
+
+
+/************
+	BREAKPOINTS
+*************/
+@media (min-width: 350px){
+
+}
+@media (min-width: 480px){
+	
+}
+@media (min-width: 592px){
+	
+}
+@media (min-width: 650px){
+	
+}
+@media (min-width: 880px){
+	
+}
+@media (min-width: 960px){
+	.content{
+		width:96%;
+	}
+}
+@media (min-width: 1040px){
+	
+}
+@media (min-width: 1280px){
+	
+}
+@media (min-width: 1366px){
+	
+}
