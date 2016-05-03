@@ -26,7 +26,7 @@ class Index extends F5_Controller{
     public function footer(){
 		$this->db = new FooterModel();
 		
-		$dados[infosDeContato] = $this->db->listarInfosDeContato();
+		
 		
         return $dados;
     }

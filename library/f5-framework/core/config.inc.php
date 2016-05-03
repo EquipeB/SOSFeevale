@@ -11,7 +11,7 @@ define("DIRETORIO_ADMIN", DIRETORIO_INICIAL."f5admin/");
 //Informações do banco de dados
 define("TIPO_BD", "mysql");
 define("HOST_BD", "localhost");
-define("NOME_BD", "paula_reichert_f5admin");
+define("NOME_BD", "sos_feevale_f5admin");
 define("USUARIO_BD", "root");
 define("SENHA_BD", "");
 
